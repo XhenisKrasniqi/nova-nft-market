@@ -1,0 +1,705 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div a{
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    transition: all 0.3s ease 0s;
+    padding: 8px 15px;
+    border-radius: 18px;
+    letter-spacing: 1px;
+}
+header div a:hover{
+    color: #fff;
+    background-color: #7453fc;
+}
+header .createYours{
+    color: #ffffff;
+    background-color: #7453fc;
+    transition: all 0.3s ease 0s;
+    border-radius: 18px;
+}
+header .menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header div img{
+    width: 180px;
+}
+details {
+    display: none;
+}
+
+.container{
+    padding: 0 150px;
+}
+.mainPart{
+    background-image: url(./images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 250px 0px 120px 0px;
+}
+.mainPart .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainPart .row .col{
+    width: 48%;
+    padding: 0 12px;
+}
+.mainPart .row .col h6{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    color: #fff;
+}
+.mainPart .row .col h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+    text-transform: uppercase;
+    margin: 0;
+} 
+.mainPart .row .col p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 20px;
+}
+.borderButton a{
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+.borderButton a::after{
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.borderButton a:hover{
+    background-color: #7453fc;
+    color: #fff;
+}
+.secondPart{
+    background-image: url(./images/dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 120px 0px 120px 0px;
+}
+.title{
+    text-align: center;
+    margin-top: 100px;
+}
+.title h2{
+    margin-top: 10px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+.title span{
+    color: #7453fc;
+    font-size: 30px;
+}
+.title::before {
+    position: absolute;
+    content: "";
+    background-color: #7453fc;
+    height: 3px;
+    width: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -30px;
+}
+.secondPart .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.secondPart .row .col{
+    width: 16%;
+}
+.secondPart .row .col .item{
+    background-color: #282b2f;
+    text-align: center;
+    padding: 21px;
+    border-radius: 20px;
+    border: 1px solid #404245;
+    position: relative;
+    margin: 15px;
+}
+.secondPart .row .col .item .icon{
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+    text-align: center;
+    line-height: 62px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.secondPart .row .col .item .icon img{
+    vertical-align: middle;
+}
+.secondPart .row .col .item h4{
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-weight: 700;
+}
+.secondPart .row .col .iconButton a{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    background-color: #fff;
+    color: #7453fc;
+    border-radius: 50%;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    bottom: -23px;
+    transform: translateX(-23px);
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.row .col:hover .iconButton a {
+    visibility: visible;
+    opacity: 1;
+}
+.secondRow {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.secondRow .col{
+    width: 31%;
+    margin-right: 20px;
+}
+.secondRow .col .item{
+    padding-bottom: 60px;
+}
+.secondRow .col .item img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: block;
+    width: 100%;
+}
+.secondRow .col .item .text{
+    background-color: #282b2f;
+    border: 1px solid #404245;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 30px;
+}
+.secondRow .col .item .text h4{
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    color: #fff;
+    font-weight: 700;
+}
+.secondRow .col .item .text span{
+    color: #fff;
+    display: inline-block;
+    width: 48%;
+    font-size: 15px;
+}
+.secondRow .col .item .text .collection{
+    text-align: left;
+}
+.secondRow .col .item .text .category{
+    text-align: right;
+}
+.secondRow  .col .item .text span strong{
+    font-size: 20px;
+}
+.secondRow .col .item .text .main-button{
+    margin-top: 20px;
+    margin-bottom: -60px;
+}
+.secondRow .col .item .text .main-button a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 90px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.secondRow .col .item .text .main-button a::after{
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.createNft{
+    background-image: url(./images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 120px 0px;
+    position: relative;
+}
+.createNft .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.createNft .row .secondTitle{
+    width: 66.66666667%;
+}
+.createNft .row .secondTitle .text{
+    text-align: left;
+    margin-bottom: 50px;
+}
+.createNft .row .secondTitle .text h2{
+    margin-top: 10px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+.createNft .row .colOne{
+    width: 33.3333%;
+}
+.createNft .row .colOne .mainButton{
+    text-align: right;
+}
+.createNft .row .colOne .mainButton a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 1s;
+}
+.createNft .row .colOne .mainButton a:after {
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.createNft .row .colOne .mainButton a:hover{
+    background-color: #fff;
+    color: #7453fc;
+    border: 1px solid #fff;
+}
+.createNft .row .secondTitle .text::before{
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    height: 3px;
+    width: 150px;
+    left: 0;
+    margin-left: 150px;
+    margin-top: -30px;
+}
+.colOne .item{
+    margin-top: 30px;
+    position: relative;
+    padding: 10px;
+}
+.colOne .item:after {
+    position: absolute;
+    width: 2px;
+    height: 95%;
+    background-color: rgba(255, 255, 255, 0.2);
+    content: '';
+    right: 5px;
+    top: 5%;
+}
+.colOne .item .number{
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+.colOne .item .number h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-weight: 700;
+}
+.colOne .item .icon{
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+    text-align: center;
+    line-height: 62px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.colOne .item .icon img{
+    vertical-align: middle;
+}
+.colOne .item h4{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.colOne .item p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+}
+.secondCol{
+    width: 33.3333%;
+}
+.secondCol .item{
+    margin-top: 30px;
+    position: relative;
+    padding: 10px;
+}
+.secondCol .item .number{
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+.secondCol .item .number h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-weight: 700;
+}
+.secondCol .item .icon{
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+    text-align: center;
+    line-height: 62px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.secondCol .item .icon img{
+    vertical-align: middle;
+}
+.secondCol .item h4{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.secondCol .item p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+}
+.inMarket{
+    background-image: url(./images/dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 250px 0px 120px 0px;
+    position: relative;
+}
+.inMarket .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inMarket .row .firstCol{
+    width: 50%;
+}
+.inMarket .row .firstCol::before{
+    position: absolute;
+    content: "";
+    background-color: #7453fc;
+    height: 3px;
+    width: 150px;
+    left: 0;
+    margin-left: 150px;
+    margin-top: -30px;
+}
+.inMarket .row .firstCol .sectionHeading{
+    text-align: start;
+}
+.inMarket .row .firstCol h2{
+    margin-top: 10px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 0;
+}
+.inMarket .row .firstCol span{
+    color: #7453fc;
+    font-size: 30px;
+}
+.inMarket .row .firstCol .filters{
+    text-align: right;
+}
+.inMarket .row .firstCol .filters ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.inMarket .row .firstCol .filters ul li{
+    display: inline-block;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-left: 0px;
+}
+.inMarket .row .firstCol .filters ul li:hover{
+    background-color: #7453fc;
+}
+.inMarket .row .secondCol{
+    width: 100%;
+}
+.inMarket .row .secondCol .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inMarket .row .secondCol .row .itemsCol{
+    left: 0px;
+    top: 0px;
+    width: 45%;
+    margin: 0 auto;
+}
+.inMarket .row .secondCol .row .itemsCol .item{
+    background-color: #282b2f;
+    border: 1px solid #404245;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    margin-bottom: 30px;
+}
+.inMarket .row .secondCol .row .itemsCol .item .leftImage img{
+    border-radius: 20px;
+    min-width: 195px;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent{
+    margin-left: 30px;
+    width: 100%;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: start;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent .author{
+    display: flex;
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #fff;
+    align-items: center;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent .author img{
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent .author h6{   
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 25px;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent .line{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 30px 0px;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent .nftInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent .bid{
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    text-align: start;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent .bid strong{
+    font-size: 20px;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent .ends{
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    text-align: end;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent .ends strong{
+    font-size: 20px;
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent .textButton{
+    text-align: start;    
+}
+.inMarket .row .secondCol .row .itemsCol .item .rightContent .textButton a{
+    color: #7453fc;
+}
+footer{
+    background: linear-gradient(132deg, rgba(125,90,254,1) 25%, rgba(160,84,244,1) 100%);
+    text-align: center;
+    padding: 25px 0px;
+}
+footer .row{
+    text-align: center;
+    display: block;
+}
+footer .row h1{
+    color: #ffffff;
+    font-size: 22px;
+}
+@media screen and (max-width:762px){
+    body{
+        overflow-x: hidden;
+    }
+    header details {
+        display: block;
+    }
+    header{
+        flex-direction: column;
+    }
+    .menu{
+        display: none;
+    }
+    details summary img {
+        width: 80px;
+    }
+    details ul{
+        list-style-type: none;
+    }
+    summary::marker {
+        color: #ffffff;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .mainPart .row .col{
+        width: 90%;
+    }
+    .mainPart .row .col .headerImg img{
+        width: 100%;
+    }
+    .secondPart .row .col{
+        width: 100%;
+    }
+    .secondRow{
+        flex-direction: column;
+    }
+    .secondRow .col{
+        width: 100%;
+    }
+    .createNft .row{
+        flex-direction: column;
+    }
+    .createNft .row .secondTitle{
+        width: 100%;
+    }
+    .createNft .row .colOne .mainButton{
+        text-align: center;
+    }
+    .createNft .row .colOne{
+        width: 100%;
+    }
+    .colOne .item:after{
+        display: none;
+    }
+    .colOne .item .number{
+        display: none;
+    }
+    .secondCol{
+        width: 100%;
+    }
+    .secondCol .item{
+        text-align: center;
+    }
+    .colOne .item{
+        text-align: center;
+    }
+    .inMarket .row .firstCol{
+        width: 100%;
+    }
+    .inMarket .row{
+        flex-direction: column;
+    }
+    .inMarket .row .secondCol .row{
+        flex-direction: column;
+    }
+    .inMarket .row .secondCol .row .itemsCol{
+        width: 100%;
+    }
+    .inMarket .row .secondCol .row .itemsCol .item{
+        flex-direction: column;
+    }
+    .inMarket .row .secondCol .row .itemsCol .item .rightContent{
+        margin: 0;
+    }
+    .inMarket .row .secondCol .row .itemsCol .item .leftImage img{
+        width: 100%;
+    }
+}

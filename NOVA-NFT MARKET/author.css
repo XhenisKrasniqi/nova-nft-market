@@ -1,0 +1,533 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div a{
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    transition: all 0.3s ease 0s;
+    padding: 8px 15px;
+    border-radius: 18px;
+    letter-spacing: 1px;
+}
+header div a:hover{
+    color: #fff;
+    background-color: #7453fc;
+}
+details {
+    display: none;
+}
+
+header .createYours{
+    color: #ffffff;
+    background-color: #7453fc;
+    transition: all 0.3s ease 0s;
+    border-radius: 18px;
+}
+header .menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header div img{
+    width: 180px;
+}
+.container{
+    padding: 0 150px;
+}
+.mainPart{
+    background-image: url(./images/heading-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding: 250px 0px 120px 0px;
+}
+title{
+    color: #fff;
+}
+.title h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+.title h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 66px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.title span{
+    color: #8a75da;
+    font-size: 15px;
+}
+.title a{
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.secondPart .row .colOne div img{
+    border-radius: 50%;
+    width: 170px;
+}
+.secondPart .row .colOne h4{
+    margin-top: 60px;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    color: #fff;
+    text-align: start;
+    font-weight: 700;
+}
+.secondPart .row .colOne h4 a{
+    font-size: 15px;
+    color: #7453fc;
+}
+.secondPart .row .colOne{
+    display: flex;
+}
+.secondPart .row{
+    display: flex;
+    justify-content: space-between;
+}
+.secondPart{
+    background-image: url(./images/dark-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 100px;
+}
+.secondPart .row .colTwo .rightInfo .row .colFive .mainButton a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden; 
+    text-decoration: none;
+}
+.secondPart .row .colTwo .rightInfo .row .colFive .mainButton a::after{
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.secondPart .row .colFour h5{
+    font-size: 20px;
+    color: #afafaf;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.colThree .infoItem {
+    text-align: start;
+}
+.colThree .infoItem i{
+    color: #7453fc;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+.colThree .infoItem h6{
+    font-size: 20px;
+    color: #7453fc;
+    margin-top: 4px;
+}
+.colThree .infoItem h6 span{
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+}
+.colTwo{
+    width: 50%;
+}
+.colTwo .rightInfo{
+    background-color: #282b2f;
+    border: 1px solid #404245;
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin-left: 100px;
+}
+.colTwo .rightInfo .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.discoverItems{
+    padding-top: 100px;
+}
+.discoverItems .row{
+    display: flex;
+    column-gap: 20px;
+}
+.discoverItems .row .secondType{
+    width: 23%;
+}
+.discoverItems .row .secondType .item{
+    background-color: #282b2f;
+    border: 1px solid #404245;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 52px;
+}
+.discoverItems .row .secondType .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.discoverItems .row .secondType .row .col{
+    width: 100%;
+}
+.discoverItems .row .secondType .row .col span{
+    display: inline-flex;
+    width: 100%;
+}
+.discoverItems .row .secondType .item .row .col span img{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    z-index: 2;
+}
+.discoverItems .row .secondType .item .row .col img{
+    margin-top: -32px;
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    height: 222px;
+    width: 100%;
+    object-fit: cover;
+}
+.discoverItems .row .secondType .item .row .col h4{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-weight: 700;
+}
+.discoverItems .row .secondType .item .row .col .line{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 30px 0px;
+}
+.discoverItems .row .secondType .item .row .col .row .textCol{
+    width: 40%;
+}
+.discoverItems .row .secondType .item .row .col .row .textCol h3{
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.discoverItems .row .secondType .item .row .col .row .textCol h2{
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 0;
+}
+.discoverItems .row .secondType .item .row .col .mainButton{
+    margin-top: 20px;
+    margin-bottom: -60px;
+    text-align: center;
+}
+.discoverItems .row .secondType .item .row .col .mainButton a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 1.5s;
+}
+.discoverItems .row .secondType .item .row .col .mainButton a:hover{
+    background-color: #ffffff;
+    color: #7453fc;
+}
+.discoverItems .row .secondType .item .col .mainButton a::after{
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.createNft{
+    background-image: url(./images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 120px 0px;
+    position: relative;
+}
+.createNft .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.createNft .row .title{
+    width: 66.66666667%;
+}
+.createNft .row .title .text{
+    text-align: left;
+    margin-bottom: 50px;
+}
+.createNft .row .title .text h2{
+    margin-top: 10px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+.createNft .row .colOne{
+    width: 33.3333%;
+}
+.createNft .row .colOne .mainButton{
+    text-align: right;
+}
+.createNft .row .colOne .mainButton a{
+    font-size: 14px;
+    color: #fff;
+    background-color: #7453fc;
+    border: 1px solid #7453fc;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 1s;
+}
+.createNft .row .colOne .mainButton a:after {
+    width: 78%;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.createNft .row .colOne .mainButton a:hover{
+    background-color: #fff;
+    color: #7453fc;
+    border: 1px solid #fff;
+}
+.colOne .item{
+    margin-top: 30px;
+    position: relative;
+    padding: 10px;
+}
+.colOne .item:after {
+    position: absolute;
+    width: 2px;
+    height: 95%;
+    background-color: rgba(255, 255, 255, 0.2);
+    content: '';
+    right: 5px;
+    top: 5%;
+}
+.colOne .item .number{
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+.colOne .item .number h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-weight: 700;
+}
+.colOne .item .icon{
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+    text-align: center;
+    line-height: 62px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.colOne .item .icon img{
+    margin: 17px;
+}
+.colOne .item h4{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.colOne .item p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+}
+.secondCol{
+    width: 33.3333%;
+}
+.secondCol .item{
+    margin-top: 30px;
+    position: relative;
+    padding: 10px;
+}
+.secondCol .item .number{
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+.secondCol .item .number h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-weight: 700;
+}
+.secondCol .item .icon{
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+    text-align: center;
+    line-height: 62px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.secondCol .item .icon img{
+    margin: 17px;
+}
+.secondCol .item h4{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.secondCol .item p{
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+}
+footer{
+    background: linear-gradient(132deg, rgba(125,90,254,1) 25%, rgba(160,84,244,1) 100%);
+    text-align: center;
+    padding: 25px 0px;
+}
+footer .row{
+    text-align: center;
+    display: block;
+}
+footer .row h1{
+    color: #ffffff;
+    font-size: 22px;
+}
+@media screen and (max-width:762px){
+
+    body{
+        overflow-x: hidden;
+    }
+    header details {
+        display: block;
+    }
+    header{
+        flex-direction: column;
+    }
+    .menu{
+        display: none;
+    }
+    details summary img {
+        width: 80px;
+    }
+    details ul{
+        list-style-type: none;
+    }
+    summary::marker {
+        color: #ffffff;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .createNft .row{
+        flex-direction: column;
+    }
+    .createNft .row .secondTitle{
+        width: 100%;
+    }
+    .createNft .row .colOne .mainButton{
+        text-align: center;
+    }
+    .createNft .row .colOne{
+        width: 100%;
+    }
+    .colOne .item:after{
+        display: none;
+    }
+    .colOne .item .number{
+        display: none;
+    }
+    .secondCol{
+        width: 100%;
+    }
+    .secondCol .item{
+        text-align: center;
+    }
+    .colOne .item{
+        text-align: center;
+    }
+    .secondPart .row{
+        flex-direction: column;
+    }
+    .colTwo{
+        width: 100%;
+    }
+    .colTwo .rightInfo{
+        margin: 0;
+        margin-top: 20px;
+    }
+    .colThree .infoItem{
+        text-align: center;
+    }
+    .discoverItems .row .secondType{
+        width: 100%;
+    }
+    .discoverItems .row .secondType .item .row .col .row .textCol{
+        width: 100%;
+    }
+    .createNft .row .title{
+        width: 100%;
+    }
+}
